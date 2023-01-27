@@ -18,12 +18,15 @@ const PokemonBrowser = () => {
   const [showForm, setShowForm] = useState(false);
   
 
+  /* -------------------------------------------------------------- */ 
 
+  // Dispatch thunk actions in PokemonBrowser
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getPokemon());
   }, [dispatch]);
-
+  
+  /* -------------------------------------------------------------- */ 
 
 
 
